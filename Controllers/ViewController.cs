@@ -12,6 +12,10 @@ namespace Excel_On.Controllers
 		{
 			return View();
 		}
+		public IActionResult Contact()
+		{
+			return View();
+		}
 		public IActionResult Service()
 		{
 			return View();
