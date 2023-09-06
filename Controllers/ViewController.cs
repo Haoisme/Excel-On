@@ -16,5 +16,21 @@ namespace Excel_On.Controllers
 		{
 			return View();
 		}
+		public IActionResult Page()
+		{
+			return View();
+		}
+		public IActionResult Pricing()
+		{
+			return View();
+		}
+		public IActionResult FAQ()
+		{
+			return View();
+		}
+		public IActionResult Blog()
+		{
+			return View();
+		}
 	}
 }
