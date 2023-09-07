@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
 
-
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8" />
@@ -1056,7 +1055,9 @@
 												.elementor-widget-image img {
 													vertical-align: middle;
 													display: inline-block
-												}</style>												<img width="501" height="121" src="~/wp-content/uploads/sites/341/2023/01/logo-e1675130015743.png" class="attachment-full size-full wp-image-50" alt="" decoding="async" loading="lazy" srcset="https://templatekit.jegtheme.com/emploi/wp-content/uploads/sites/341/2023/01/logo-e1675130015743.png 501w, https://templatekit.jegtheme.com/emploi/wp-content/uploads/sites/341/2023/01/logo-e1675130015743-300x72.png 300w" sizes="(max-width: 501px) 100vw, 501px" />
+												}
+										</style>												
+											<img width="501" height="121" src="~/wp-content/uploads/sites/341/2023/01/logo-e1675130015743.png" class="attachment-full size-full wp-image-50" alt="" decoding="async" loading="lazy" srcset="https://templatekit.jegtheme.com/emploi/wp-content/uploads/sites/341/2023/01/logo-e1675130015743.png 501w, https://templatekit.jegtheme.com/emploi/wp-content/uploads/sites/341/2023/01/logo-e1675130015743-300x72.png 300w" sizes="(max-width: 501px) 100vw, 501px" />
 									</div>
 								</div>
 							</div>
@@ -1070,16 +1071,15 @@
 											<div class="jkit-menu-wrapper">
 												<div class="jkit-menu-container">
 													<ul id="menu-menu-1" class="jkit-menu jkit-menu-direction-flex jkit-submenu-position-top">
-														<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item menu-item-34"><a href="index.html" aria-current="page">Home</a></li>
-														<li id="menu-item-549" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-549"><a href="about/index.html">About Us</a></li>
-														<li id="menu-item-548" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-548"><a href="service/index.html">Service</a></li>
+														<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item menu-item-34"><a href="https://localhost:7294/view/HomePage" aria-current="page">Home</a></li>
+														<li id="menu-item-549" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-549"><a href="https://localhost:7294/view/AboutUs">About Us</a></li>
+														<li id="menu-item-548" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-548"><a href="https://localhost:7294/view/Service">Service</a></li>
 														<li id="menu-item-1490" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1490">
 															<a href="#">Page</a>
 															<ul class="sub-menu">
-																<li id="menu-item-1488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1488"><a href="pricing/index.html">Pricing</a></li>
-																<li id="menu-item-1486" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1486"><a href="faq/index.html">FAQ</a></li>
-																<li id="menu-item-935" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-935"><a href="blog/index.html">Blog</a></li>
-																<li id="menu-item-1487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1487"><a href="404-page/index.html">404 Page</a></li>
+																<li id="menu-item-1488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1488"><a href="https://localhost:7294/view/Pricing">Pricing</a></li>
+																<li id="menu-item-1486" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1486"><a href="https://localhost:7294/view/FAQ">FAQ</a></li>
+																<li id="menu-item-935" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-935"><a href="https://localhost:7294/view/Blog">Blog</a></li>
 															</ul>
 														</li>
 													</ul>
@@ -1100,7 +1100,7 @@
 								<div class="elementor-element elementor-element-d1e4ed0 elementor-align-right elementor-widget elementor-widget-button" data-id="d1e4ed0" data-element_type="widget" data-widget_type="button.default">
 									<div class="elementor-widget-container">
 										<div class="elementor-button-wrapper">
-											<a href="contact/index.html" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+											<a href="https://localhost:7294/view/Contact" class="elementor-button-link elementor-button elementor-size-sm" role="button">
 												<span class="elementor-button-content-wrapper">
 													<span class="elementor-button-text">Contact Us</span>
 												</span>
@@ -1115,6 +1115,12 @@
 				</section>
 			</div>
 		</header>
+
+			<div class="container">
+				<main role="main" class="pb-3">
+					@RenderBody()
+				</main>
+			</div>
 			
 		<footer itemscope="itemscope" itemtype="https://schema.org/WPFooter">
 			<style>
@@ -2176,45 +2182,41 @@
 		</footer>
 	</div>
 
-	<div class="container">
-		<main role="main" class="pb-3">
-			@RenderBody()
-		</main>
-		</div>
+	
 
 			<script src="~/lib/jquery/dist/jquery.min.js"></script>
 			<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 			<script src="~/js/site.js" asp-append-version="true"></script>
 			@await RenderSectionAsync("Scripts", required: false)
-			<link rel='stylesheet' id='jeg-dynamic-style-css' href='~/wp-content/plugins/jeg-elementor-kit/lib/jeg-framework/assets/css/jeg-dynamic-styles077c.css?ver=1.2.9' media='all' />
-			<link rel='stylesheet' id='elementor-post-366-css' href='~/wp-content/uploads/sites/341/elementor/css/post-366b00c.css?ver=1680492975' media='all' />
-			<link rel='stylesheet' id='elementor-icons-jkiticon-css' href='~/wp-content/plugins/jeg-elementor-kit/assets/fonts/jkiticon/jkiticonc141.css?ver=2.6.1' media='all' />
-			<link rel='stylesheet' id='tiny-slider-css' href='~/wp-content/plugins/jeg-elementor-kit/assets/js/tiny-slider/tiny-sliderf342.css?ver=2.9.3' media='all' />
-			<link rel='stylesheet' id='elementor-post-369-css' href='~/wp-content/uploads/sites/341/elementor/css/post-369b267.css?ver=1680492977' media='all' />
-			<link rel='stylesheet' id='e-animations-css' href='~/wp-content/plugins/elementor/assets/lib/animations/animations.minfb6f.css?ver=3.12.1' media='all' />
-			<script src='~/wp-content/themes/hello-elementor/assets/js/hello-frontend.min8a54.js?ver=1.0.0' id='hello-theme-frontend-js'></script>
-			<script src='~/wp-content/plugins/elementor/assets/js/webpack.runtime.minfb6f.js?ver=3.12.1' id='elementor-webpack-runtime-js'></script>
-			<script src='~/wp-content/plugins/elementor/assets/js/frontend-modules.minfb6f.js?ver=3.12.1' id='elementor-frontend-modules-js'></script>
-			<script src='~/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2' id='elementor-waypoints-js'></script>
-			<script src='~/wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2' id='jquery-ui-core-js'></script>
-			<script id='elementor-frontend-js-before'>
-				var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } }, "version": "3.12.1", "is_static": false, "experimentalFeatures": { "e_dom_optimization": true, "e_optimized_assets_loading": true, "e_optimized_css_loading": true, "a11y_improvements": true, "additional_custom_breakpoints": true, "hello-theme-header-footer": true, "landing-pages": true }, "urls": { "assets": "https:\/\/templatekit.jegtheme.com\/emploi\/wp-content\/plugins\/elementor\/assets\/" }, "swiperClass": "swiper-container", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description", "hello_header_logo_type": "title", "hello_header_menu_layout": "horizontal", "hello_footer_logo_type": "logo" }, "post": { "id": 5, "title": "Emploi%20%E2%80%93%20Human%20Resources%20%26%20Recruitment%20Agency%20Elementor%20Template%20Kit%20by%20Jegtheme", "excerpt": "", "featuredImage": false } };
-			</script>
-			<script src='~/wp-content/plugins/elementor/assets/js/frontend.minfb6f.js?ver=3.12.1' id='elementor-frontend-js'></script>
-			<script id='elementor-frontend-js-after'>
-				var jkit_ajax_url = "indexe2f2.html?jkit-ajax-request=jkit_elements", jkit_nonce = "6438f14aff";
-			</script>
-			<script src='~/wp-content/plugins/jeg-elementor-kit/assets/js/elements/sticky-elementc141.js?ver=2.6.1' id='jkit-sticky-element-js'></script>
-			<script src='~/wp-content/plugins/jeg-elementor-kit/assets/js/elements/nav-menuc141.js?ver=2.6.1' id='jkit-element-navmenu-js'></script>
-			<script src='~/wp-content/plugins/jeg-elementor-kit/assets/js/elements/client-logoc141.js?ver=2.6.1' id='jkit-element-clientlogo-js'></script>
-			<script src='~/wp-content/plugins/jeg-elementor-kit/assets/js/tiny-slider/tiny-sliderf342.js?ver=2.9.3' id='tiny-slider-js'></script>
-			<script src='~/wp-content/plugins/jeg-elementor-kit/assets/js/elements/fun-factc141.js?ver=2.6.1' id='jkit-element-funfact-js'></script>
-			<script src='~/wp-content/plugins/jeg-elementor-kit/assets/js/elements/accordionc141.js?ver=2.6.1' id='jkit-element-accordion-js'></script>
-			<script id='jkit-element-pagination-js-extra'>
-				var jkit_element_pagination_option = { "element_prefix": "jkit_element_ajax_" };
-			</script>
-			<script src='~/wp-content/plugins/jeg-elementor-kit/assets/js/elements/post-paginationc141.js?ver=2.6.1' id='jkit-element-pagination-js'></script>
-			<script src='~/wp-content/plugins/jeg-elementor-kit/assets/js/elements/mailchimpc141.js?ver=2.6.1' id='jkit-element-mailchimp-js'></script>
+		<link rel='stylesheet' id='jeg-dynamic-style-css' href='~/wp-content/plugins/jeg-elementor-kit/lib/jeg-framework/assets/css/jeg-dynamic-styles077c.css?ver=1.2.9' media='all' />
+		<link rel='stylesheet' id='elementor-post-366-css' href='~/wp-content/uploads/sites/341/elementor/css/post-366b00c.css?ver=1680492975' media='all' />
+		<link rel='stylesheet' id='elementor-icons-jkiticon-css' href='~/wp-content/plugins/jeg-elementor-kit/assets/fonts/jkiticon/jkiticonc141.css?ver=2.6.1' media='all' />
+		<link rel='stylesheet' id='tiny-slider-css' href='~/wp-content/plugins/jeg-elementor-kit/assets/js/tiny-slider/tiny-sliderf342.css?ver=2.9.3' media='all' />
+		<link rel='stylesheet' id='elementor-post-369-css' href='~/wp-content/uploads/sites/341/elementor/css/post-369b267.css?ver=1680492977' media='all' />
+		<link rel='stylesheet' id='e-animations-css' href='~/wp-content/plugins/elementor/assets/lib/animations/animations.minfb6f.css?ver=3.12.1' media='all' />
+		<script src='~/wp-content/themes/hello-elementor/assets/js/hello-frontend.min8a54.js?ver=1.0.0' id='hello-theme-frontend-js'></script>
+		<script src='~/wp-content/plugins/elementor/assets/js/webpack.runtime.minfb6f.js?ver=3.12.1' id='elementor-webpack-runtime-js'></script>
+		<script src='~/wp-content/plugins/elementor/assets/js/frontend-modules.minfb6f.js?ver=3.12.1' id='elementor-frontend-modules-js'></script>
+		<script src='~/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+		<script src='~/wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+		<script id='elementor-frontend-js-before'>
+			var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } }, "version": "3.12.1", "is_static": false, "experimentalFeatures": { "e_dom_optimization": true, "e_optimized_assets_loading": true, "e_optimized_css_loading": true, "a11y_improvements": true, "additional_custom_breakpoints": true, "hello-theme-header-footer": true, "landing-pages": true }, "urls": { "assets": "https:\/\/templatekit.jegtheme.com\/emploi\/wp-content\/plugins\/elementor\/assets\/" }, "swiperClass": "swiper-container", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description", "hello_header_logo_type": "title", "hello_header_menu_layout": "horizontal", "hello_footer_logo_type": "logo" }, "post": { "id": 5, "title": "Emploi%20%E2%80%93%20Human%20Resources%20%26%20Recruitment%20Agency%20Elementor%20Template%20Kit%20by%20Jegtheme", "excerpt": "", "featuredImage": false } };
+		</script>
+		<script src='~/wp-content/plugins/elementor/assets/js/frontend.minfb6f.js?ver=3.12.1' id='elementor-frontend-js'></script>
+		<script id='elementor-frontend-js-after'>
+			var jkit_ajax_url = "indexe2f2.html?jkit-ajax-request=jkit_elements", jkit_nonce = "6438f14aff";
+		</script>
+		<script src='~/wp-content/plugins/jeg-elementor-kit/assets/js/elements/sticky-elementc141.js?ver=2.6.1' id='jkit-sticky-element-js'></script>
+		<script src='~/wp-content/plugins/jeg-elementor-kit/assets/js/elements/nav-menuc141.js?ver=2.6.1' id='jkit-element-navmenu-js'></script>
+		<script src='~/wp-content/plugins/jeg-elementor-kit/assets/js/elements/client-logoc141.js?ver=2.6.1' id='jkit-element-clientlogo-js'></script>
+		<script src='~/wp-content/plugins/jeg-elementor-kit/assets/js/tiny-slider/tiny-sliderf342.js?ver=2.9.3' id='tiny-slider-js'></script>
+		<script src='~/wp-content/plugins/jeg-elementor-kit/assets/js/elements/fun-factc141.js?ver=2.6.1' id='jkit-element-funfact-js'></script>
+		<script src='~/wp-content/plugins/jeg-elementor-kit/assets/js/elements/accordionc141.js?ver=2.6.1' id='jkit-element-accordion-js'></script>
+		<script id='jkit-element-pagination-js-extra'>
+			var jkit_element_pagination_option = { "element_prefix": "jkit_element_ajax_" };
+		</script>
+		<script src='~/wp-content/plugins/jeg-elementor-kit/assets/js/elements/post-paginationc141.js?ver=2.6.1' id='jkit-element-pagination-js'></script>
+		<script src='~/wp-content/plugins/jeg-elementor-kit/assets/js/elements/mailchimpc141.js?ver=2.6.1' id='jkit-element-mailchimp-js'></script>
 </body>
 
 </html>
