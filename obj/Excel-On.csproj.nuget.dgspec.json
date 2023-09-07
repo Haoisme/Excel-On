@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Acer\\Desktop\\Project3\\Project3\\Excel-On.csproj": {}
+    "C:\\Users\\Acer\\Desktop\\Excel-On\\Excel-On.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Acer\\Desktop\\Project3\\Project3\\Excel-On.csproj": {
+    "C:\\Users\\Acer\\Desktop\\Excel-On\\Excel-On.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Acer\\Desktop\\Project3\\Project3\\Excel-On.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\Desktop\\Excel-On\\Excel-On.csproj",
         "projectName": "Excel-On",
-        "projectPath": "C:\\Users\\Acer\\Desktop\\Project3\\Project3\\Excel-On.csproj",
+        "projectPath": "C:\\Users\\Acer\\Desktop\\Excel-On\\Excel-On.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Acer\\Desktop\\Project3\\Project3\\obj\\",
+        "outputPath": "C:\\Users\\Acer\\Desktop\\Excel-On\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
